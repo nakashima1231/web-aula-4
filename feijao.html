@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supermercado Online - Layout Position</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f4f4;
+            height: 900px;
+            /* Altura definida para conter os elementos absolutos */
+        }
+
+        /* HEADER */
+        header {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 80px;
+            background-color: #27ae60;
+            color: white;
+        }
+
+        header h1 {
+            position: absolute;
+            left: 20px;
+            top: 10px;
+            margin: 0;
+        }
+
+        /* NAV */
+        nav {
+            position: absolute;
+            top: 80px;
+            left: 0;
+            width: 100%;
+            height: 40px;
+            background-color: #2ecc71;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            position: absolute;
+            left: 20px;
+            top: 8px;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* MAIN */
+        main {
+            position: absolute;
+            top: 140px;
+            left: 20px;
+            width: 700px;
+            height: 500px;
+            background-color: white;
+            border: 1px solid #ddd;
+        }
+
+        /* SECTION - OFERTAS */
+        .ofertas {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            right: 10px;
+            height: 60px;
+            background-color: #f1c40f;
+            text-align: center;
+            line-height: 60px;
+            font-weight: bold;
+        }
+
+        /* ARTICLE - PRODUTOS */
+        article {
+            position: absolute;
+            width: 180px;
+            height: 250px;
+            border: 1px solid #eee;
+            text-align: center;
+            top: 100px;
+        }
+
+        .prod-1 {
+            left: 20px;
+        }
+
+        .prod-2 {
+            left: 240px;
+        }
+
+        .prod-3 {
+            left: 460px;
+        }
+
+        article img {
+            width: 120px;
+            height: 120px;
+            margin-top: 15px;
+        }
+
+        /* ASIDE - CARRINHO */
+        aside {
+            position: absolute;
+            top: 140px;
+            left: 740px;
+            width: 220px;
+            height: 500px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            padding: 10px;
+        }
+
+        /* FOOTER */
+        footer {
+            position: absolute;
+            top: 660px;
+            left: 0;
+            width: 100%;
+            height: 60px;
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            line-height: 60px;
+        }
+
+        .btn-comprar {
+            background-color: #e67e22;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <img src="plantando_feijao.jpg" alt="feijao">
+        <h1>Feijao</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="planta_trigo.html">trigo</a></li>
+            <li><a href="planta_arroz.html">arroz</a></li>
+            <li><a href="feijao.html">feijao</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            
+                <h1 id="nome">Nome</h1>
+                <p>
+                Feijão é um nome comum para uma grande variedade de sementes de plantas de alguns gêneros da família Fabaceae. Proporciona nutrientes essenciais como proteínas, ferro, cálcio, vitaminas (principalmente do complexo B), carboidratos e fibras.
+                </p>
+
+                <h1 id="historia">Historia</h1>
+                <p>
+                    O feijão-comum chega a Portugal por via da América Central e do Sul, ainda no século XVI, na época dos Descobrimentos. O grão já era conhecido e cultivado pelos povos ameríndios. A historiografia moderna entende que o feijão conheceu dois centros de origem: os Andes e a região mesoamericana, pelo que há variedades peculiares dessas regiões, que não se encontram noutras partes do planeta.
+                </p>
+            
+                <h1 id="especie">Especie</h1>
+                <p>
+                    Três espécies de feijão são muito cultivadas no Brasil:
+                    <ul>
+                        <li>Phaseolus vulgaris, o feijão comum, cultivado em todo o mundo;</li>
+                        <li>Vigna unguiculata, vulgarmente chamado de feijão-de-corda, feijão-macáçar, caupi e outros, predominante na região Nordeste e na Amazônia;</li>
+                        <li>Cajanus cajan, feijão-guandu ou andu, comum no Nordeste, principalmente em sua variedade arbórea.</li>
+                    </ul>
+                </p>
+           
+                <h1 id="prod">Producao no Brasil</h1>
+                <p>
+                    Em 2010, a produção mundial total de grãos de feijão foi de 23 milhões de toneladas, cultivadas em mais de 30 milhões de hectares. A produção mundial de vagens em 2010 foi de 17,7 milhões de toneladas, cultivadas em 15,1 milhões de hectares. Desde 2006, o Paraná lidera a produção de feijão no Brasil. Minas Gerais é o 2º maior produtor de feijão do Brasil, com 17,2% da produção nacional em 2020.
+                </p>
+            
+            
+        </section>
+    </main>
+
+    <aside>
+        Feijão é um nome comum para uma grande variedade de sementes de plantas de alguns gêneros da família Fabaceae. Proporciona nutrientes essenciais como proteínas, ferro, cálcio, vitaminas (principalmente do complexo B), carboidratos e fibras.<br>
+        <a href="#nome">Nome<br></a>
+        <a href="#historia">Historia<br></a>
+        <a href="#especie">Especie<br></a>
+        <a href="#prod">Producao no Brasil<br></a>
+    </aside>
+
+
+    <footer>
+        <h1>Referência</h1>
+        <p>https://pt.wikipedia.org/wiki/Feijão Consultado em 10 de março de 2026.</p>
+    </footer>
+
+
+</body>
+</html>

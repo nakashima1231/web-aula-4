@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Exercício: Tags Inline com Dart</title>
+    <style>
+       
+        body { font-family: sans-serif; line-height: 1.6; max-width: 800px; margin: 20px auto; padding: 20px; }
+        code { background-color: #eee; padding: 2px 4px; border-radius: 4px; font-family: monospace; }
+        samp { background-color: #333; color: #f1f1f1; padding: 10px; display: block; margin: 10px 0; border-radius: 5px; }
+        kbd { background: #eee; border: 1px solid #ccc; border-radius: 3px; padding: 1px 5px; font-weight: bold; }
+       
+    </style>
+</head>
+
+<body>
+
+    <h1>Programação Orientada a Objetos com Dart</h1>
+
+    <p>
+        Uma classe em Dart é a <strong>planta de construção (ou molde)</strong> para criar objetos.
+        É <em>extremamente importante</em> entender que tudo em Dart é um objeto.
+    </p>
+
+    <hr>
+
+    <h2>1. Definindo uma Classe</h2>
+    <p> 
+        Para criar uma classe, usamos a palavra-chave class.<br>
+        Imagine a <code>classe Carro</code>. Dentro dela, definimos uma variável de programa chamada <var>modelo</var>
+        para armazenar o nome do veículo.
+    </p>
+
+    <p>
+        <q>Classes são fundamentais para organizar código complexo de forma legível.</q>
+    </p>
+
+    <h2>2. Exemplo Prático</h2>
+    <p>
+        Veja o código abaixo:<br>
+        <code>class Carro { String? <var>modelo</var>; }</code>
+    </p>
+
+    <p>
+        Se você digitar ,<kbd>dart run main.dart</kbd> no seu terminal, poderá ver a execução do seu script. <br>
+        A saída esperada no console <mark>(o output)</mark> seria algo como:
+    </p>
+
+    <!-- samp -->
+    <samp>Instância de 'Carro' criada com sucesso!</samp>
+
+
+    <!-- hr -->
+
+    <h2>3. Notas de Rodapé e Detalhes</h2>
+    <p>
+        <small>Nota: O Dart suporta null safety por padrão.</small><br>
+        <u>Lembre-se:</u> A convenção para nomes de classes é <i>UpperCamelCase.</i>
+    </p>
+
+    <p>
+        As fórmulas de performance de memória podem envolver cálculos complexos como: <br>
+        Memória <sub>total</sub> = Objetos <sup>n</sup> + Cache.
+    </p>
+
+</body>
+
+</html>

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supermercado Online - Layout Position</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f4f4;
+            height: 900px;
+            /* Altura definida para conter os elementos absolutos */
+        }
+
+        /* HEADER */
+        header {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 80px;
+            background-color: #27ae60;
+            color: white;
+        }
+
+        header h1 {
+            position: absolute;
+            left: 20px;
+            top: 10px;
+            margin: 0;
+        }
+
+        /* NAV */
+        nav {
+            position: absolute;
+            top: 80px;
+            left: 0;
+            width: 100%;
+            height: 40px;
+            background-color: #2ecc71;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            position: absolute;
+            left: 20px;
+            top: 8px;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* MAIN */
+        main {
+            position: absolute;
+            top: 140px;
+            left: 20px;
+            width: 700px;
+            height: 500px;
+            background-color: white;
+            border: 1px solid #ddd;
+        }
+
+        /* SECTION - OFERTAS */
+        .ofertas {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            right: 10px;
+            height: 60px;
+            background-color: #f1c40f;
+            text-align: center;
+            line-height: 60px;
+            font-weight: bold;
+        }
+
+        /* ARTICLE - PRODUTOS */
+        article {
+            position: absolute;
+            width: 180px;
+            height: 250px;
+            border: 1px solid #eee;
+            text-align: center;
+            top: 100px;
+        }
+
+        .prod-1 {
+            left: 20px;
+        }
+
+        .prod-2 {
+            left: 240px;
+        }
+
+        .prod-3 {
+            left: 460px;
+        }
+
+        article img {
+            width: 120px;
+            height: 120px;
+            margin-top: 15px;
+        }
+
+        /* ASIDE - CARRINHO */
+        aside {
+            position: absolute;
+            top: 140px;
+            left: 740px;
+            width: 220px;
+            height: 500px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            padding: 10px;
+        }
+
+        /* FOOTER */
+        footer {
+            position: absolute;
+            top: 660px;
+            left: 0;
+            width: 100%;
+            height: 60px;
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            line-height: 60px;
+        }
+
+        .btn-comprar {
+            background-color: #e67e22;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>SuperMercado Legal</h1>
+    </header>
+    
+
+    <nav>
+        <ul>
+            <li><a href="#">Hortifruti</a></li>
+            <li><a href="#">Mercearia</a></li>
+            <li><a href="#">Carnes</a></li>
+            <li><a href="#">Bebidas</a></li>
+        </ul>
+    </nav>
+    
+
+
+    <main>
+        <section class="ofertas">
+            🔥 OFERTAS DA SEMANA - TUDO COM 20% OFF!
+        </section>
+            
+
+        <section>
+            <article class="prod-1">
+                <img src="arroz_prato.jpg" alt="Arroz" width="50px">
+                <h3>Arroz Tipo 1</h3>
+                <p>R$ 29,90</p>
+                <button class="btn-comprar">Adicionar</button>
+            </article>
+
+            <article class="prod-2">
+                <img src="feijao.png" alt="Feijão">
+                <h3>Feijão Preto</h3>
+                <p>R$ 8,50</p>
+                <button class="btn-comprar">Adicionar</button>
+            </article>
+
+            <article class="prod-3">
+                <img src="azeite.png" alt="Azeite">
+                <h3>Azeite Extra Virgem</h3>
+                <p>R$ 42,00</p>
+                <button class="btn-comprar">Adicionar</button>
+            </article>
+        </section>
+    </main>
+    
+
+
+    <aside>
+        <h3>Seu Carrinho</h3>
+        <hr>
+        <p>1x Arroz ... R$ 29,90</p>
+        <p>2x Feijão ... R$ 17,00</p>
+        <strong>Total: R$ 46,90</strong>
+    </aside>
+    
+
+
+
+    <footer>
+         &copy; 2026 SuperMercado Legal Online - Todos os direitos reservados.
+    </footer>
+   
+
+
+</body>
+
+</html>
