@@ -7,7 +7,7 @@
 ## Os arquivos para os exercícios da aula estão abaixo:
 * ### [Supermercado](supermercado.html)
 * ### [html3_dart.html](html3_dart.html)
-* ### [planta_arroz.html](planta_arroz.html)
-
+* ### [arroz.html](arroz.html)
+* ### [feijao.html](feijao.html)
 
 
